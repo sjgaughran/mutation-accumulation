@@ -41,7 +41,7 @@ POP3: indiv7, indiv8
 OUTGROUP: indiv9
 ```
 
-* You must also specify the name of the outgroup population as found in the population text file. The script is then run on each sub-VCF as:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;You must also specify the name of the outgroup population as found in the population text file. The script is then run on each sub-VCF as:
 
 ```
 python read_snpeff_bs.py snpeff_bs_{number}.py pops.txt outgroup_pop_name
