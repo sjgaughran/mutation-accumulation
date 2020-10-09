@@ -17,7 +17,7 @@ that is outgroup to all other populations of interest. This assumption may be vi
 - [SnpEff](https://pcingola.github.io/SnpEff/)
 - Python3
 
-## SNP Annotation
+## SNP annotation
 
 [SnpEff](https://pcingola.github.io/SnpEff/) is a versatile genomic variant annotation tool. In this pipeline, a SnpEff-annotated VCF is required. The VCF file should containing individuals from the target populations and the outgroup individual. Though not required, we recommend generating the VCF by calling only variants in annotated CDS regions, which will be faster and speed up some downstream analyses. VCFs should be filtered for quality and bi-allelic variants. Additional filtering--such as including only one isoform/transcript per gene--is recommended.
 
