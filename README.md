@@ -51,11 +51,11 @@ python read_snpeff_bs.py snpeff_bs_{number}.py pops.txt outgroup_pop_name
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Because the sub-VCFs are numbered, a simple shell script can run the above command on each.
 
-3) **Bootstrap by sampling with replacement from the sub-VCFs 1000 times, and output the average of each statistic with an upper and a lower bound to the 95% CI.**
+3) **Bootstrap by sampling with replacement from the sub-VCFs 1000 times, and output the average of each statistic with an upper and a lower bound to the 95% CI.** Run *process_bs_results.py* in the directory containing all of the output files from Step 2. The script searches for these files in the directory, so no additional information needs to be specified. 
 
+```
+python process_bs_results.py
+```
 
 
 *NB: The efficiency of the pipeline could be improved.*
-
-
-
