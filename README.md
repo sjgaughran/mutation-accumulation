@@ -49,9 +49,9 @@ OUTGROUP: indiv9
 python read_snpeff_bs.py snpeff_bs_{number}.py pops.txt outgroup_pop_name
 ```
 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Because the sub-VCFs are numbered, a simple shell script can run the above command on each.
 
-
-3) bootstrap by sampling with replacement from the sub-VCFs 1000 times, and output the average of each statistic with an upper and a lower bound to the 95% CI
+3) **Bootstrap by sampling with replacement from the sub-VCFs 1000 times, and output the average of each statistic with an upper and a lower bound to the 95% CI.**
 
 
 
