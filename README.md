@@ -28,26 +28,24 @@ If working with non-model species, you can build an annotation database for the 
 The statistical analysis and bootstrapping are done through three separate steps:
 1) **Split the SnpEff-annotated VCF into 1000 sub-VCFs of equal size.** Run *split_snpeff_vcf.py*, specifying the SnpEff-annotated VCF and the total number of lines (e.g. `wc -l snpeff.vcf`) in the VCF.
 
-``
+```
 python split_snpeff_vcf.py snpeff.vcf 1000000
-``
+```
 
 2) **Calculate the Simons *et al.* (2014) method and the first step (*L<sub>XY</sub>* statistic) of Do *et al.* (2015) on each individual sub-VCF.** Run *read_snpeff_bs.py* on every sub-VCF (all of which are called *snpeff_bs_1.vcf*, *snpeff_bs_2.vcf*, ..., *snpeff_bs_1000.vcf*). This will output results files for each sub-VCF, which are then processed in the next step. To run this script, you must specify a text file that contains a one population name per line, with sample names listed after a colon (:) and separated by commas. For example:
 
-``
+```
 POP1: indiv1, indiv3, indiv5
 POP2: indiv2, indiv4, indiv6
 POP3: indiv7, indiv8
 OUTGROUP: indiv9
-``
+```
 
 * You must also specify the name of the outgroup population as found in the population text file. The script is then run on each sub-VCF as:
 
-``
+```
 python read_snpeff_bs.py snpeff_bs_{number}.py pops.txt outgroup_pop_name
-``
-
-
+```
 
 
 
