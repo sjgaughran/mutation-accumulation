@@ -42,6 +42,7 @@ OUTGROUP: indiv9
 ```
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;You must also specify the name of the outgroup population as found in the population text file. 
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The script is then run on each sub-VCF as:
 
 ```
