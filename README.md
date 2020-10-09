@@ -20,9 +20,12 @@ If working with non-model species, you can build an annotation database for the 
 
 ## Statistic calculations
 
-The statistical analysis and bootstrapping are done through three major steps:
-1) split the SnpEff-annotated VCF into 1000 VCFs of equal size
-2) run the Simons *et al.* (2014) method and the first step (*L<sub>XY</sub>* statistic)
+The statistical analysis and bootstrapping are done through three separate steps:
+1) split the SnpEff-annotated VCF into 1000 sub-VCFs of equal size
+2) run the Simons *et al.* (2014) method and the first step (*L<sub>XY</sub>* statistic) of Do *et al.* (2015) on each individual sub-VCF.
+3) bootstrap by sampling with replacement from the sub-VCFs 1000 times, and output the average of each statistic with an upper and a lower bound to the 95% CI
+
+
 
 *NB: The efficiency of the pipeline could be improved.*
 
